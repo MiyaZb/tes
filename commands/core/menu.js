@@ -2,7 +2,6 @@ const tags = {
 default: "default",
 owner: "owner"
 }
-const rawwr = Object.keys(global.Events)
 const menu = {
 before: `list command yang tersedia`.trimStart(),
 type: "=> [ #type ] ",
@@ -39,11 +38,8 @@ return menu.custom ? "*-*  " +menu.help[0] : Array.isArray(menu.help) ? menu.hel
 })].join("\n")
 })].join("\n\n")
 
-text += `\n\njika tidak tahu menggunakan command, format ${userbot.prefix}help command. contoh ${userbot.prefix}help ${random(rawwr)}`
+text += `\n\njika tidak tahu menggunakan command, format ${userbot.prefix}help command. contoh ${userbot.prefix}help play`
 conn.sendButtonLoc(m.chat, await (await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa1pVfdb1zUoSve4Unc08jl5BpCHwfys8qxA&usqp=CAU')).buffer(), text, `@created By fauzan`, `Creator`, `creator`, m)
 }
 }
 
-function random(ext) {
-return ext[Math.floor(Math.random () * ext.length)]
-}
