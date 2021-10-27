@@ -5,10 +5,8 @@ const Baileys = "@adiwajshing/baileys";
 const { WAConnection: _WAConnection } = require("@adiwajshing/baileys");
 const WAConnection = require('./Lib/simple').WAConnection(_WAConnection);
 const { Functions } = require('./Lib/Functions');
-const { JsonDB } =  require("node-json-db")
-const { Config } = require('node-json-db/dist/lib/JsonDBConfig')
   
-
+  
 global.antidelete = false
   global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
     global.Ft = new Functions();// Menghubungkan dari Function.js
