@@ -4,6 +4,8 @@ userbot = {
   "62822980698995",
   "6281325994066"
   ],
+  packname: "Rixle-botV2",
+  author: "https://github.com/Fau-Zan",
   mess: {
    wait: "tunggu sedang di proses...",
    error: "errorr!!"
