@@ -25,7 +25,6 @@ Edit the required value in [`config.js`](https://github.com/Fau-Zan/Rixle-botV2/
 
 
 # 👥[`Fear Team`](https://chat.whatsapp.com/HCF35wzLasQ2xdUff29oqt)
-* [`Fauzan (Dev)`](https://github.com/FzNMYBot)
 * [`Sanz (Dev)`](https://github.com/sanzgantengz)
 * [`Rizky (Dev)`](https://github.com/Rizxyu)
 * [`Kotz (Dev)`](https://github.com/Kotzyy)
